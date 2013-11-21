@@ -51,6 +51,9 @@ Shader.prototype = {
         this.fragmentSource = source;
         this.needsUpdate = true;
     },
+    /*
+     * TODO: Why do we have the `exporter` argument?
+     */
     getExportData: function( exporter ) {
         return {
             vertexSource: this.vertexSource.split( '\n' ),
